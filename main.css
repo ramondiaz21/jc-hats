@@ -122,7 +122,8 @@
   justify-content: space-evenly;
 }
 
-.best-sellers {
+.best-sellers,
+.our-categories {
   align-items: center;
   background-color: #ebebeb;
   display: flex;
@@ -135,4 +136,26 @@
 
 .best-sellers .products-wrapper {
   margin: 50px 0;
+}
+
+.our-categories {
+  background-color: white;
+}
+
+.our-categories .products-wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  margin: 50px 0;
+  position: relative;
+}
+
+.our-categories .category-wrapper {
+  transition: 0.5s all ease;
+}
+
+.our-categories .category-wrapper:hover {
+  transform: scale(1.05);
 }
