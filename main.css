@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.font-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.font-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.font-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.white-text {
+  color: white;
+}
+
+.brown-text {
+  color: #403b3d;
+}
+
+.headline-2 {
+  font-size: 18px;
+}
+
+.headline-1 {
+  font-size: 48px;
+}
+
+.body-text {
+  font-size: 16px;
+}
+
+.btn {
+  border: 1px solid #272727;
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 100%;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  transition: 1s all ease;
+  width: 214px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #272727;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #272727;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #272727;
+}
+
+.btn-secondary:hover {
+  background-color: #272727;
+  color: white;
+}
+
+.hero {
+  align-items: center;
+  background-image: url("../images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hero .body-text {
+  max-width: 350px;
+  text-align: center;
+}
+
+.hero .headline-1,
+.hero .headline-2 {
+  text-align: center;
+}
+
+.hero .btn-primary:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.hero .btn-secondary {
+  background-color: transparent;
+  color: white;
+}
+
+.hero .btn-secondary:hover {
+  background-color: #272727;
+  color: white;
+}
+
+.hero .hero-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.best-sellers {
+  align-items: center;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.best-sellers .products-wrapper {
+  margin: 50px 0;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JC HATS</title>
+  <link href="main.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-wrapper">
+      <h2 class="font-light white-text headline-2">WESTERN WEAR</h2>
+      <h1 class="font-bold white-text headline-1">WILD STYLE, <br> ELEGANT HEART</h1>
+      <p class="font-regular white-text body-text">Discover your new favorite hats, irresistible belts, and captivating wear that breathes life into your style.</p>
+      <button class="btn btn-primary">SHOP NOW</button>
+      <button class="btn btn-secondary">SHOP NOW</button>
+    </div>
+  </section>
+
+  <section class="best-sellers">
+    <h2 class="font-light brown-text headline-2">STYLE THAT FITS YOU</h2>
+    <h1 class="font-bold brown-text headline-1">BEST SELLERS</h1>
+    <p class="font-regular brown-text body-text">The right hat can instantly elevate your outfit and reflect your individuality.</p>
+    <div class="products-wrapper">
+      {% section 'best-sellers' %}
+    </div>   
+    <button class="btn btn-secondary">EXPLORE MORE</button>
+  </section>
+
+</body>
+
+</html>
