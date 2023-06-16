@@ -81,6 +81,7 @@
   background-image: url("../images/hero.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -136,6 +137,15 @@
   text-align: center;
 }
 
+@media (max-width: 575.98px) {
+  .best-sellers,
+  .our-categories,
+  .hats,
+  .carousel {
+    padding: 35px 0;
+  }
+}
+
 .best-sellers .products-wrapper {
   margin: 50px 0;
 }
@@ -153,6 +163,18 @@
   justify-items: center;
   margin: 50px 0;
   position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .our-categories .products-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .our-categories .products-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .our-categories .category-wrapper {
@@ -199,6 +221,13 @@
   text-align: center;
 }
 
+@media (max-width: 575.98px) {
+  .products-by-class,
+  .new-services {
+    padding: 35px 0;
+  }
+}
+
 .products-by-class .products-wrapper {
   display: grid;
   gap: 30px;
@@ -207,6 +236,18 @@
   justify-items: center;
   margin: 50px 0;
   position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .products-by-class .products-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .products-by-class .products-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .products-by-class .headline-2 {
@@ -236,14 +277,47 @@
   position: relative;
 }
 
+@media (max-width: 991.98px) {
+  .new-services .services-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .new-services .services-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .section-divided {
   display: flex;
 }
 
 .section-divided .left-side,
 .section-divided .right-side {
-  width: 50%;
   max-height: 600px;
+  width: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .section-divided .left-side,
+  .section-divided .right-side {
+    max-height: 600px;
+    width: 100%;
+  }
+
+  .section-divided {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-divided .centerer {
+    padding: 35px 0;
+  }
+
+  .reverse-sm {
+    flex-direction: column-reverse;
+  }
 }
 
 .section-divided .headline-2 {
@@ -263,13 +337,13 @@
 }
 
 .section-divided img {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
-.section-divided .info-wrapper{
-  max-width: 400px;
+.section-divided .info-wrapper {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  max-width: 400px;
 }
